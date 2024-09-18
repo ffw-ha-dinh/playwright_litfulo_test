@@ -27,20 +27,20 @@ exports.SignUp=class SignUp{
         await this.bothCheckbox.click();
     }
 }
-exports.access=class access{
-    constructor(page){
-        this.page=page;
-        this.accountbutton=page.getByTestId('idp1');
-        this.userName=page.getByTestId('username');
-        this.passWord=page.getByTestId('password');
-        this.acceptandconnect=page.getByTestId('submit_button');
-    }
-    async clickaccountbutton(){
-        await this.accountbutton.click();
-    }
-    async login(username,password ){
-        await this.userName.fill(username);
-        await this.passWord.fill(password);
-        await this.acceptandconnect.click();
-    }
-}
+// exports.access=class access{
+//     constructor(page){
+//         this.page=page;
+//         this.accountbutton=page.getByTestId('idp1');
+//         this.userName=page.getByTestId('username');
+//         this.passWord=page.getByTestId('password');
+//         this.acceptandconnect=page.getByTestId('submit_button');
+//     }
+//     async clickaccountbutton(){
+//         await this.accountbutton.click();
+//     }
+//     async login(username,password ){
+//         await this.userName.fill(username);
+//         await this.passWord.fill(password);
+//         await this.acceptandconnect.click();
+//     }
+// }

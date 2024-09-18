@@ -1,16 +1,16 @@
 const{test, expect}=require('@playwright/test');
-const {SignUp}=require('/Users/dinhthithuha/Documents/Projects/playwright_litfulo_test/pagesPOM/sign-up');
-const {access}=require('/Users/dinhthithuha/Documents/Projects/playwright_litfulo_test/pagesPOM/sign-up');
-const {copaysavingscardstep1}=require('/Users/dinhthithuha/Documents/Projects/playwright_litfulo_test/pagesPOM/copaysavingscard');
-const {copaysavingscardstep2}=require('/Users/dinhthithuha/Documents/Projects/playwright_litfulo_test/pagesPOM/copaysavingscard');
-const {copaysavingscardstep3}=require('/Users/dinhthithuha/Documents/Projects/playwright_litfulo_test/pagesPOM/copaysavingscard');
-const {copaysavingscardstep4}=require('/Users/dinhthithuha/Documents/Projects/playwright_litfulo_test/pagesPOM/copaysavingscard');
+const {SignUp}=require('/Users/dinhha/Documents/projects/playwright_litfulo_test/pagesPOM/sign-up');
+//const {access}=require('/Users/dinhha/Documents/projects/playwright_litfulo_test/pagesPOM/sign-up');
+const {copaysavingscardstep1}=require('/Users/dinhha/Documents/projects/playwright_litfulo_test/pagesPOM/copaysavingscard');
+const {copaysavingscardstep2}=require('/Users/dinhha/Documents/projects/playwright_litfulo_test/pagesPOM/copaysavingscard');
+const {copaysavingscardstep3}=require('/Users/dinhha/Documents/projects/playwright_litfulo_test/pagesPOM/copaysavingscard');
+const {copaysavingscardstep4}=require('/Users/dinhha/Documents/projects/playwright_litfulo_test/pagesPOM/copaysavingscard');
 test('Sign up Copay', async({page})=>{
     const SignUpPage=new SignUp(page);
     await SignUpPage.goto();
-    const accessvpn=new access(page);
-    await accessvpn.clickaccountbutton();
-    await accessvpn.login('DINHT05','Tomtum@189');
+    // const accessvpn=new access(page);
+    // await accessvpn.clickaccountbutton();
+    // await accessvpn.login('DINHT05','Tomtum@189');
     await SignUpPage.scrollcopaysavingscardCheckbox();
     await SignUpPage.choosecopaysavingscardCheckbox();
     const CopayStep1=new copaysavingscardstep1 (page);
