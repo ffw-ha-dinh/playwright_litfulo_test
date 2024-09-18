@@ -10,7 +10,7 @@ test('Sign up Copay', async({page})=>{
     await SignUpPage.goto();
     // const accessvpn=new access(page);
     // await accessvpn.clickaccountbutton();
-    // await accessvpn.login('DINHT05','Tomtum@189');
+    // await accessvpn.login('','');
     await SignUpPage.scrollcopaysavingscardCheckbox();
     await SignUpPage.choosecopaysavingscardCheckbox();
     const CopayStep1=new copaysavingscardstep1 (page);
